@@ -10,6 +10,7 @@ issueTrackerURL="https://github.com/florian-berger/indestructible-tools/issues"
 modId="indestructibletools"
 version="2021.1"
 displayName="Indestructible Tools"
+logoFile="indestructibletools.png"
 
 displayURL="https://berger-media.biz/downloads/10/minecraft/indestructible-tools"
 authors="Florian <UltimateG4ming> Berger" #optional
