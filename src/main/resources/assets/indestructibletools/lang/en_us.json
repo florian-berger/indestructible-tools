@@ -1,0 +1,10 @@
+{
+  "itemGroup.indestructibletools": "Indestructible Tools",
+
+  "item.indestructibletools.indestructible_pickaxe": "Indestructible pickaxe",
+  "item.indestructibletools.indestructible_axe": "Indestructible axe",
+  "item.indestructibletools.indestructible_shovel": "Indestructible shovel",
+  "item.indestructibletools.indestructible_sword": "Indestructible sword",
+  "item.indestructibletools.indestructible_hoe": "Indestructible hoe",
+  "item.indestructibletools.indestructible_ingot": "Indestructible ingot"
+}

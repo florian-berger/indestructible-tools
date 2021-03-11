@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " I ",
+    " I ",
+    " S "
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "N": {
+      "item": "indestructibletools:indestructible_ingot"
+    }
+  },
+  "result": {
+    "item": "indestructibletools:indestructible_sword"
+  }
+}

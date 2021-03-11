@@ -1,0 +1,10 @@
+{
+  "itemGroup.indestructibletools": "Unzerstörbare Werkzeuge",
+
+  "item.indestructibletools.indestructible_pickaxe": "Unzerstörbare Spitzhacke",
+  "item.indestructibletools.indestructible_axe": "Unzerstörbare Axt",
+  "item.indestructibletools.indestructible_shovel": "Unzerstörbare Schaufel",
+  "item.indestructibletools.indestructible_sword": "Unzerstörbares Schwert",
+  "item.indestructibletools.indestructible_hoe": "Unzerstörbare Hacke",
+  "item.indestructibletools.indestructible_ingot": "Unzerstörbarer Barren"
+}
