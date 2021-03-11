@@ -7,7 +7,7 @@ The 'Mending' enchantment isn't enough for me. So I created a mod that adds such
 
 
 ## Recipes
-The following recipes are added to the game:
+The following recipes are added to the game:\
 ![Recipe_Ingot](/curseforge/images/Recipe_Ingot.png?raw=true)
 ![Recipe_Axe](/curseforge/images/Recipe_Axe.png?raw=true)
 ![Recipe_Hoe](/curseforge/images/Recipe_Hoe.png?raw=true)
