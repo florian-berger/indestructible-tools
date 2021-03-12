@@ -18,4 +18,4 @@ The following recipes are added to the game:\
 
 ### Using in modpacks
 You can use this mod in every modpack that is available for free. You are allowed to distribute the mod file in an own ModPack launcher.
-Just add a link to this repository or the corresponding CurseForge page.
+Just add a link to this repository, [my website](https://berger-media.biz/downloads/10/minecraft/indestructible-tools) or the [CurseForge page](https://www.curseforge.com/minecraft/mc-mods/indestructible-tools) of this modification.
