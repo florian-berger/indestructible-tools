@@ -26,11 +26,19 @@ public class ItemIndestructibleAxe extends AxeItem {
 
     @Override
     public boolean canApplyAtEnchantingTable(ItemStack stack, Enchantment enchantment) {
-        return EnchantmentHelper.isUnbreakingEnchantment(enchantment);
+        if (EnchantmentHelper.isInvalidEnchantment(enchantment)) {
+            return false;
+        }
+
+        return super.canApplyAtEnchantingTable(stack, enchantment);
     }
 
     @Override
     public boolean isBookEnchantable(ItemStack stack, ItemStack book) {
-        return EnchantmentHelper.isBookEnchantmentAllowed(book);
+        if (EnchantmentHelper.isBookEnchantedWithInvalidSpell(book)) {
+            return false;
+        }
+
+        return super.isBookEnchantable(stack, book);
     }
 }

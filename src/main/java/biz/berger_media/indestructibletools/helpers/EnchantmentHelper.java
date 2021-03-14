@@ -1,6 +1,7 @@
 package biz.berger_media.indestructibletools.helpers;
 
 import net.minecraft.enchantment.Enchantment;
+import net.minecraft.enchantment.MendingEnchantment;
 import net.minecraft.enchantment.UnbreakingEnchantment;
 import net.minecraft.item.ItemStack;
 import java.util.Map;
@@ -15,24 +16,25 @@ public class EnchantmentHelper {
      * @param book Book that should be checked
      * @return True if the book has an unbreaking enchantment
      */
-    public static boolean isBookEnchantmentAllowed(ItemStack book) {
+    public static boolean isBookEnchantedWithInvalidSpell(ItemStack book) {
         Map<Enchantment, Integer> enchantments = net.minecraft.enchantment.EnchantmentHelper.getEnchantments(book);
         for (Map.Entry<Enchantment, Integer> entry : enchantments.entrySet()) {
-            if (isUnbreakingEnchantment(entry.getKey())) {
-                return false;
+            if (isInvalidEnchantment(entry.getKey())) {
+                return true;
             }
         }
 
-        return true;
+        return false;
     }
 
     /**
-     * Checks if an enchantment is an unbreaking enchantment
+     * Checks if an enchantment is invalid for indestructible tools
      *
      * @param enchantment Enchantment that should be checked
-     * @return True if the passed enchantment is an instance of UnbreakingEnchantment
+     * @return True if the passed enchantment is an instance of UnbreakingEnchantment or MendingEnchantment
      */
-    public static boolean isUnbreakingEnchantment(Enchantment enchantment) {
-        return enchantment instanceof UnbreakingEnchantment;
+    public static boolean isInvalidEnchantment(Enchantment enchantment) {
+        return enchantment instanceof UnbreakingEnchantment
+                || enchantment instanceof MendingEnchantment;
     }
 }
