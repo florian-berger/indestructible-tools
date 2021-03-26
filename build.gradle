@@ -13,7 +13,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '2021.1.1'
+version = '2021.1.2'
 group = 'biz.berger_media.indestructibletools' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'indestructibletools'
 
