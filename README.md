@@ -1,5 +1,5 @@
 # Indestructible Tools
-[![CurseForge](https://cf.way2muchnoise.eu/full_455636_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/indestructible-tools)
+[![CurseForge](http://cf.way2muchnoise.eu/full_455636_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/indestructible-tools)
 [![Issues](https://img.shields.io/github/issues/florian-berger/indestructible-tools)](https://github.com/florian-berger/indestructible-tools)
 
 Hi! Welcome to the source repository of my very first Minecraft modification. I play the game very frequently, and there are some things missing.
