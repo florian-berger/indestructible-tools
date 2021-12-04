@@ -2,10 +2,10 @@ package biz.berger_media.indestructibletools.item;
 
 import biz.berger_media.indestructibletools.helpers.EnchantmentHelper;
 import biz.berger_media.indestructibletools.helpers.ItemHelper;
-import net.minecraft.enchantment.Enchantment;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemTier;
-import net.minecraft.item.SwordItem;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.Tiers;
+import net.minecraft.world.item.enchantment.Enchantment;
 
 /**
  * Class that represents an indestructible sword
@@ -15,7 +15,7 @@ public class ItemIndestructibleSword extends SwordItem {
      * Constructor of the sword
      */
     public ItemIndestructibleSword() {
-        super(ItemTier.NETHERITE, 5, -1f, ItemHelper.getProperties(null));
+        super(Tiers.NETHERITE, 5, -1f, ItemHelper.getProperties());
     }
 
     @Override

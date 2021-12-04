@@ -2,11 +2,10 @@ package biz.berger_media.indestructibletools.item;
 
 import biz.berger_media.indestructibletools.helpers.EnchantmentHelper;
 import biz.berger_media.indestructibletools.helpers.ItemHelper;
-import net.minecraft.enchantment.Enchantment;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemTier;
-import net.minecraft.item.ShovelItem;
-import net.minecraftforge.common.ToolType;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.ShovelItem;
+import net.minecraft.world.item.Tiers;
+import net.minecraft.world.item.enchantment.Enchantment;
 
 /**
  * Class that represents an indestructible shovel
@@ -16,7 +15,7 @@ public class ItemIndestructibleShovel extends ShovelItem {
      * Constructor of the shovel
      */
     public ItemIndestructibleShovel() {
-        super(ItemTier.NETHERITE, 2, -2f, ItemHelper.getProperties(ToolType.SHOVEL));
+        super(Tiers.NETHERITE, 2, -2f, ItemHelper.getProperties());
     }
 
     @Override

@@ -29,6 +29,6 @@ This mod is adding some indestructible tools to Minecraft. They are crafted by u
 [[dependencies.indestructibletools]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.18)"
+    versionRange="[1.18,1.19)"
     ordering="NONE"
     side="BOTH"
