@@ -1,10 +1,8 @@
 package biz.berger_media.indestructibletools.helpers;
 
 import biz.berger_media.indestructibletools.IndestructibleTools;
-import net.minecraft.item.*;
-import net.minecraftforge.common.ToolType;
-
-import javax.annotation.Nullable;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
 
 /**
  * Class that provides helper functions for items
@@ -13,21 +11,16 @@ public final class ItemHelper {
     /**
      * Gets the default properties for an unbreakable enchantment
      *
-     * @param toolType Type of the tool. NULL if it should not be set
      * @return Item properties
      */
-    public static Item.Properties getProperties(@Nullable ToolType toolType) {
+    public static Item.Properties getProperties() {
         Item.Properties props = new Item.Properties()
-                .group(IndestructibleTools.ITEM_GROUP)
-                .maxStackSize(1)
-                .maxDamage(-1)
+                .tab(IndestructibleTools.ITEM_GROUP)
+                .stacksTo(1)
+                .durability(-1)
                 .rarity(Rarity.EPIC)
                 .setNoRepair()
-                .isImmuneToFire();
-
-        if (toolType != null) {
-            props.addToolType(toolType, 4);
-        }
+                .fireResistant();
 
         return props;
     }

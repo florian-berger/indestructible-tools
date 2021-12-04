@@ -2,11 +2,10 @@ package biz.berger_media.indestructibletools.item;
 
 import biz.berger_media.indestructibletools.helpers.EnchantmentHelper;
 import biz.berger_media.indestructibletools.helpers.ItemHelper;
-import net.minecraft.enchantment.Enchantment;
-import net.minecraft.item.HoeItem;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemTier;
-import net.minecraftforge.common.ToolType;
+import net.minecraft.world.item.HoeItem;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Tiers;
+import net.minecraft.world.item.enchantment.Enchantment;
 
 /**
  * Class that represents an indestructible hoe
@@ -16,7 +15,7 @@ public class ItemIndestructibleHoe extends HoeItem {
      * Constructor of the hoe
      */
     public ItemIndestructibleHoe() {
-        super(ItemTier.NETHERITE, -4, 1, ItemHelper.getProperties(ToolType.HOE));
+        super(Tiers.NETHERITE, -4, 1, ItemHelper.getProperties());
     }
 
     @Override

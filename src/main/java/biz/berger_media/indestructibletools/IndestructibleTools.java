@@ -1,14 +1,14 @@
 package biz.berger_media.indestructibletools;
 
 import biz.berger_media.indestructibletools.item.IndestructibleItems;
-import net.minecraft.block.Blocks;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Main class of the mod
@@ -38,9 +38,9 @@ public class IndestructibleTools {
     /**
      * Item group for the Creative tab
      */
-    public static final ItemGroup ITEM_GROUP = new ItemGroup(MOD_ID) {
+    public static final CreativeModeTab ITEM_GROUP = new CreativeModeTab(MOD_ID) {
         @Override
-        public ItemStack createIcon() {
+        public @NotNull ItemStack makeIcon() {
             return new ItemStack(IndestructibleItems.INDESTRUCTIBLE_INGOT.get());
         }
     };

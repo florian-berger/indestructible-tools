@@ -2,11 +2,10 @@ package biz.berger_media.indestructibletools.item;
 
 import biz.berger_media.indestructibletools.helpers.EnchantmentHelper;
 import biz.berger_media.indestructibletools.helpers.ItemHelper;
-import net.minecraft.enchantment.Enchantment;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemTier;
-import net.minecraft.item.PickaxeItem;
-import net.minecraftforge.common.ToolType;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.Tiers;
+import net.minecraft.world.item.enchantment.Enchantment;
 
 /**
  * Class that represents an indestructible pickaxe
@@ -16,7 +15,7 @@ public class ItemIndestructiblePickaxe extends PickaxeItem {
      * Constructor of the pickaxe
      */
     public ItemIndestructiblePickaxe() {
-        super(ItemTier.NETHERITE, 1, -1.8f, ItemHelper.getProperties(ToolType.PICKAXE));
+        super(Tiers.NETHERITE, 1, -1.8f, ItemHelper.getProperties());
     }
 
     @Override
