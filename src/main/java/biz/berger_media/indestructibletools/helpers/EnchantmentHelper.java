@@ -36,6 +36,6 @@ public class EnchantmentHelper {
      */
     public static boolean isInvalidEnchantment(Enchantment enchantment) {
         return enchantment instanceof DigDurabilityEnchantment
-                || enchantment instanceof MendingEnchantment;
+            || enchantment instanceof MendingEnchantment;
     }
 }

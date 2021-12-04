@@ -4,8 +4,6 @@ import biz.berger_media.indestructibletools.IndestructibleTools;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 
-import javax.annotation.Nullable;
-
 /**
  * Class that provides helper functions for items
  */
