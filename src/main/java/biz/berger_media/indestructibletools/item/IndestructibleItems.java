@@ -28,4 +28,6 @@ public class IndestructibleItems {
     public static final RegistryObject<HoeItem> INDESTRUCTIBLE_HOE =
             ITEMS.register("indestructible_hoe", ItemIndestructibleHoe::new);
 
+    public static final RegistryObject<Item> INDESTRUCTIBLE_MULTITOOL =
+            ITEMS.register("indestructible_multitool", ItemIndestructibleMultiTool::new);
 }
