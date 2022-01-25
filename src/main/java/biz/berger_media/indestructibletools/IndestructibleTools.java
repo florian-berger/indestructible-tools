@@ -1,8 +1,11 @@
 package biz.berger_media.indestructibletools;
 
+import biz.berger_media.indestructibletools.events.RightClickBlockEventListener;
 import biz.berger_media.indestructibletools.item.IndestructibleItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -20,6 +23,8 @@ public class IndestructibleTools {
      */
     public static final String MOD_ID = "indestructibletools";
 
+    public static final BlockState DirtPathState = Blocks.DIRT_PATH.defaultBlockState();
+
     /**
      * Creates an instance of the mod
      */
@@ -30,6 +35,7 @@ public class IndestructibleTools {
         IndestructibleItems.ITEMS.register(bus);
 
         MinecraftForge.EVENT_BUS.register(this);
+        MinecraftForge.EVENT_BUS.register(new RightClickBlockEventListener());
     }
 
     private void setup(final FMLCommonSetupEvent event) {
