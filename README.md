@@ -13,7 +13,7 @@ To craft the ingot, use the following shapeless recipe:\
 ![Recipe_Ingot](/curseforge/images/Recipe_Ingot.png?raw=true)
 
 With these ingots, you are able to craft the known tools by using the known patterns:\
-![Recipes_Gif](/curseforge/images/Recipe_Multitool.png?raw=true)
+![Recipes_Gif](/curseforge/images/tools-recipes.gif?raw=true)
 
 
 <details>
