@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PSA",
+    "#I#",
+    " I "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:string"
+    },
+    "I": {
+      "item": "minecraft:stick"
+    },
+    "P": {
+      "item": "indestructibletools:indestructible_pickaxe"
+    },
+    "S": {
+      "item": "indestructibletools:indestructible_shovel"
+    },
+    "A": {
+      "item": "indestructibletools:indestructible_axe"
+    }
+  },
+  "result": {
+    "item": "indestructibletools:indestructible_multitool"
+  }
+}
