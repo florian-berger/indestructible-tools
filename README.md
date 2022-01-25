@@ -41,6 +41,6 @@ From **Version 2022.1**, this modification contains a multi-tool. It combines th
 \
 Thanks to [Fundryi](https://github.com/Fundryi) for the [Multi-Tool suggestion](https://github.com/florian-berger/indestructible-tools/issues/4)!
 
-### Using in modpacks
+## Usage in modpacks
 You can use this mod in every modpack that is available for free. You are allowed to distribute the mod file in an own ModPack launcher.\
 If the modpack is not distributed via CurseForge, you need to add a link to this repository, [my website](https://berger-media.biz/downloads/10/minecraft/indestructible-tools) or the [CurseForge page](https://www.curseforge.com/minecraft/mc-mods/indestructible-tools) of this modification.
