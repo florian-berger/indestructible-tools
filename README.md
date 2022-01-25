@@ -9,15 +9,38 @@ The 'Mending' enchantment isn't enough for me. So I created a mod that adds such
 
 
 ## Recipes
-The following recipes are added to the game:\
+To craft the ingot, use the following shapeless recipe:\
 ![Recipe_Ingot](/curseforge/images/Recipe_Ingot.png?raw=true)
-![Recipe_Axe](/curseforge/images/Recipe_Axe.png?raw=true)
-![Recipe_Hoe](/curseforge/images/Recipe_Hoe.png?raw=true)
-![Recipe_Pickaxe](/curseforge/images/Recipe_Pickaxe.png?raw=true)
-![Recipe_Shovel](/curseforge/images/Recipe_Shovel.png?raw=true)
-![Recipe_Sword](/curseforge/images/Recipe_Sword.png?raw=true)
 
+With these ingots, you are able to craft the known tools by using the known patterns:\
+![Recipes_Gif](/curseforge/images/Recipe_Multitool.png?raw=true)
+
+
+<details>
+<summary>Recipes as static images</summary>
+
+**Axe**\
+![Recipe_Axe](/curseforge/images/Recipe_Axe.png?raw=true)
+
+**Hoe**\
+![Recipe_Hoe](/curseforge/images/Recipe_Hoe.png?raw=true)
+
+**Pickaxe**\
+![Recipe_Pickaxe](/curseforge/images/Recipe_Pickaxe.png?raw=true)
+
+**Shovel**\
+![Recipe_Shovel](/curseforge/images/Recipe_Shovel.png?raw=true)
+
+**Sword**\
+![Recipe_Sword](/curseforge/images/Recipe_Sword.png?raw=true)
+</details>
+
+## Multi-Tool
+From **Version 2022.1**, this modification contains a multi-tool. It combines the capabilities of the pickaxe, the shovel and the axe. You can craft it by using the following recipe:\
+![Recipe_MultiTool](/curseforge/images/Recipe_Multitool.png?raw=true)
+\
+Thanks to [Fundryi](https://github.com/Fundryi) for the [Multi-Tool suggestion](https://github.com/florian-berger/indestructible-tools/issues/4)!
 
 ### Using in modpacks
-You can use this mod in every modpack that is available for free. You are allowed to distribute the mod file in an own ModPack launcher.
-Just add a link to this repository, [my website](https://berger-media.biz/downloads/10/minecraft/indestructible-tools) or the [CurseForge page](https://www.curseforge.com/minecraft/mc-mods/indestructible-tools) of this modification.
+You can use this mod in every modpack that is available for free. You are allowed to distribute the mod file in an own ModPack launcher.\
+If the modpack is not distributed via CurseForge, you need to add a link to this repository, [my website](https://berger-media.biz/downloads/10/minecraft/indestructible-tools) or the [CurseForge page](https://www.curseforge.com/minecraft/mc-mods/indestructible-tools) of this modification.
