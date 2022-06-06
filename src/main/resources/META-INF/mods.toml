@@ -1,6 +1,6 @@
 modLoader="javafml" #mandatory
 
-loaderVersion="[39,)"
+loaderVersion="[40,)"
 
 license="https://github.com/florian-berger/indestructible-tools/blob/master/LICENSE"
 issueTrackerURL="https://github.com/florian-berger/indestructible-tools/issues"
@@ -8,7 +8,7 @@ issueTrackerURL="https://github.com/florian-berger/indestructible-tools/issues"
 
 [[mods]]
 modId="indestructibletools"
-version="2022.1.0"
+version="2022.1.1"
 displayName="Indestructible Tools"
 logoFile="indestructibletools.png"
 
@@ -22,7 +22,7 @@ This mod is adding some indestructible tools to Minecraft. They are crafted by u
     # the modid of the dependency
     modId="forge"
     mandatory=true
-    versionRange="[39,)"
+    versionRange="[40,)"
     ordering="NONE"
     side="BOTH"
 
