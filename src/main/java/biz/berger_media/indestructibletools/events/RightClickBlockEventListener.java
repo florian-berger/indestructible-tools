@@ -26,8 +26,8 @@ public class RightClickBlockEventListener {
             return;
         }
 
-        Player player = event.getPlayer();
-        Level world = event.getWorld();
+        Player player = event.getEntity();
+        Level world = event.getLevel();
         InteractionHand hand = event.getHand();
 
         if (player.getItemInHand(hand).getItem() instanceof ItemIndestructibleMultiTool) {
