@@ -8,7 +8,7 @@ issueTrackerURL="https://github.com/florian-berger/indestructible-tools/issues"
 
 [[mods]]
 modId="indestructibletools"
-version="2022.2"
+version="2022.2.1"
 displayName="Indestructible Tools"
 logoFile="indestructibletools.png"
 
