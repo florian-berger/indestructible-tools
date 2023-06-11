@@ -1,0 +1,49 @@
+name: "Recipe suggestion"
+description: "You are missing a recipe? Fill this form and I will take a look at it."
+title: "Suggestion: "
+labels: ["recipe suggestion"]
+assignees:
+  - florian-berger
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this recipe suggestion! Please take the time and fill all fields.
+
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can I get in touch with you if I need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+
+  - type: input
+    id: wanted-item
+    attributes:
+      label: Wanted item?
+      description: Please name the item you want to be craft-able.
+      placeholder: e.g. Chests
+    validations:
+      required: true
+
+  - type: textarea
+    id: recipe-idea
+    attributes:
+      label: Recipe Idea
+      description: Do you have an idea how the item could be crafted? Don't make it too easy.
+      placeholder: e.g. Do a chest shape with logs
+    validations:
+      required: false
+
+  - type: textarea
+    id: further-data
+    attributes:
+      label: Further information / Screenshots / Logs
+      description: |
+        If you have any further information, screenshots, or log files, you can enter them here. 
+        To attach images, click this area to highlight it and then drag your files into it.
+    validations:
+      required: false
