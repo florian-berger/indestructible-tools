@@ -12,6 +12,6 @@ public class ItemIndestructibleIngot extends Item {
      * Constructor of the ingot
      */
     public ItemIndestructibleIngot() {
-        super(new Properties().tab(IndestructibleTools.ITEM_GROUP).rarity(Rarity.EPIC));
+        super(new Properties().rarity(Rarity.EPIC));
     }
 }

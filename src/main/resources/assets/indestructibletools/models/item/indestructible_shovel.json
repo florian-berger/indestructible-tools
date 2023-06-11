@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "indestructibletools:items/indestructible_shovel"
+    "layer0": "indestructibletools:item/indestructible_shovel"
   }
 }

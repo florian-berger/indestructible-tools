@@ -11,7 +11,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.material.Material;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -32,7 +31,7 @@ public class RightClickBlockEventListener {
 
         if (player.getItemInHand(hand).getItem() instanceof ItemIndestructibleMultiTool) {
             BlockPos pos = event.getPos();
-            if (world.getBlockState(pos.above()).getMaterial() == Material.AIR) {
+            if (world.getBlockState(pos.above()).isAir()) {
                 BlockState state = world.getBlockState(pos);
                 if (isConvertible(state)) {
                     convertToPath(world, pos, player, hand);

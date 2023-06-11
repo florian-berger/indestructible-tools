@@ -1,34 +1,32 @@
 modLoader="javafml" #mandatory
 
-loaderVersion="[41,)"
+loaderVersion="${loader_version_range}"
 
-license="https://github.com/florian-berger/indestructible-tools/blob/master/LICENSE"
-issueTrackerURL="https://github.com/florian-berger/indestructible-tools/issues"
+license="${mod_license}"
+issueTrackerURL="${mod_issues}"
 
 
 [[mods]]
-modId="indestructibletools"
-version="2022.2.1"
-displayName="Indestructible Tools"
-logoFile="indestructibletools.png"
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+logoFile="${mod_logo}"
 
-displayURL="https://berger-media.biz/downloads/10/minecraft/indestructible-tools"
-authors="Florian <UltimateG4ming> Berger" #optional
-description='''
-This mod is adding some indestructible tools to Minecraft. They are crafted by using indestructible ingots, that are created from diamonds, iron ingots and netherite ingots.
-'''
+displayURL="${mod_url}"
+authors="${mod_authors}"
+description='''${mod_description}'''
 
-[[dependencies.indestructibletools]]
+[[dependencies.${mod_id}]]
     # the modid of the dependency
     modId="forge"
     mandatory=true
-    versionRange="[41,)"
+    versionRange="${forge_version_range}"
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.indestructibletools]]
+[[dependencies.${mod_id}]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19,1.20)"
+    versionRange="${minecraft_version_range}"
     ordering="NONE"
     side="BOTH"

@@ -1,6 +1,8 @@
 # Indestructible Tools
-[![CurseForge](http://cf.way2muchnoise.eu/full_455636_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/indestructible-tools)
-[![Issues](https://img.shields.io/github/issues/florian-berger/indestructible-tools)](https://github.com/florian-berger/indestructible-tools)
+[![CurseForge](https://cf.way2muchnoise.eu/full_455636_downloads.svg?badge_style=for_the_badge)](https://www.curseforge.com/minecraft/mc-mods/indestructible-tools)
+[![CurseForge](https://cf.way2muchnoise.eu/versions/455636.svg?badge_style=for_the_badge)](https://www.curseforge.com/minecraft/mc-mods/indestructible-tools)
+[![Issues](https://img.shields.io/github/issues/florian-berger/indestructible-tools?style=for-the-badge)](https://github.com/florian-berger/indestructible-tools)
+[![Discord](https://img.shields.io/discord/302523634075828226?label=Discord&logo=discord&style=for-the-badge)](https://ultgmng.de/discord)
 
 Hi! Welcome to the source repository of my very first Minecraft modification. I play the game very frequently, and there are some things missing.
 

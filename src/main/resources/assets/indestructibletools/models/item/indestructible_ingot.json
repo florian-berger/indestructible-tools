@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "indestructibletools:items/indestructible_ingot"
+    "layer0": "indestructibletools:item/indestructible_ingot"
   }
 }

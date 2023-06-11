@@ -1,6 +1,5 @@
 package biz.berger_media.indestructibletools.helpers;
 
-import biz.berger_media.indestructibletools.IndestructibleTools;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 
@@ -14,14 +13,11 @@ public final class ItemHelper {
      * @return Item properties
      */
     public static Item.Properties getProperties() {
-        Item.Properties props = new Item.Properties()
-                .tab(IndestructibleTools.ITEM_GROUP)
+        return new Item.Properties()
                 .stacksTo(1)
                 .durability(-1)
                 .rarity(Rarity.EPIC)
                 .setNoRepair()
                 .fireResistant();
-
-        return props;
     }
 }
