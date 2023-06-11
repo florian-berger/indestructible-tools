@@ -1,22 +1,33 @@
 1.20.x Changelog
 46.0
 ====
- - 46.0.2 Fix patch in light propagation (#9532)
- - 46.0.1 Attempt to fix jar signing
-          Gradle 8 is stupid and doesn't (easily) allow in-place tasks, so a temporary fix has been made in ForgeGradle 6
- - 46.0.0 Forge 1.20
-          - Creative mode tabs are now a registry; the `BuildContents` event was renamed to `BuildCreativeModeTabContentsEvent` and moved it to its own class
-          - The pack format is now 15 for both resource packs and data packs
-          - `ScreenUtils` was deprecated in favor of a `GuiGraphics` extension
-          - Forge and the MDK were updated to Gradle 8 and FG6
-          - The Forge common config file was removed (it only contained the deprecated old fields for resource caching, which was removed in 1.19.3)
-          - Registry dummy entries were removed
-          - `RemappingVertexPipeline` was fixed to forward the `endVertex()` call
-          - Forge tool tags were removed in favor of vanilla ones
-          Co-authored-by: ChampionAsh5357 <ash@ashwork.net>
-          Co-authored-by: coehlrich <coehlrich@users.noreply.github.com>
-          Co-authored-by: Dennis C <11262040+XFactHD@users.noreply.github.com>
-          Co-authored-by: Matyrobbrt <matyrobbrt@gmail.com>
+ - 46.0.13 [1.20] Add `AFTER_LEVEL` render level stage (#9555)
+ - 46.0.12 Reorder overlay layers to match vanilla (#9550)
+ - 46.0.11 Re-implement missing level-sensitive block light hook in ChunkAccess (#9536)
+ - 46.0.10 Fix issues in the deserialization of empty ingredients (#9537)
+ - 46.0.9  Fix wrong variable passed into EnchantmentClue lookup Fixes #9543 (#9544)
+ - 46.0.8  Fix incorrect depth test state in debug graph rendering Fixes #9534 (#9539)
+ - 46.0.7  Fix initCapabilities patch location in ServerLevel Fixes #9526 (#9531)
+ - 46.0.6  Use Spinning Effect Intensity instead of Partial Tick for Portal Overlay Fixes #9529 (#9530)
+ - 46.0.5  Fix getArmorModelHook patch, Fixex #9523 (#9528)
+ - 46.0.4  Fix duplicate Map writes in PlayerList patch. (#9521)
+ - 46.0.3  Fix Forge Version including MC version in MDK.
+ - 46.0.2  Fix patch in light propagation (#9532)
+ - 46.0.1  Attempt to fix jar signing
+           Gradle 8 is stupid and doesn't (easily) allow in-place tasks, so a temporary fix has been made in ForgeGradle 6
+ - 46.0.0  Forge 1.20
+           - Creative mode tabs are now a registry; the `BuildContents` event was renamed to `BuildCreativeModeTabContentsEvent` and moved it to its own class
+           - The pack format is now 15 for both resource packs and data packs
+           - `ScreenUtils` was deprecated in favor of a `GuiGraphics` extension
+           - Forge and the MDK were updated to Gradle 8 and FG6
+           - The Forge common config file was removed (it only contained the deprecated old fields for resource caching, which was removed in 1.19.3)
+           - Registry dummy entries were removed
+           - `RemappingVertexPipeline` was fixed to forward the `endVertex()` call
+           - Forge tool tags were removed in favor of vanilla ones
+           Co-authored-by: ChampionAsh5357 <ash@ashwork.net>
+           Co-authored-by: coehlrich <coehlrich@users.noreply.github.com>
+           Co-authored-by: Dennis C <11262040+XFactHD@users.noreply.github.com>
+           Co-authored-by: Matyrobbrt <matyrobbrt@gmail.com>
 
 45.1
 ====
