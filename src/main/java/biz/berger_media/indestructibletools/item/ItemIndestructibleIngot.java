@@ -1,6 +1,5 @@
 package biz.berger_media.indestructibletools.item;
 
-import biz.berger_media.indestructibletools.IndestructibleTools;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 

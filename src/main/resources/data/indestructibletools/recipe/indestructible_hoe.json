@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "III",
+    " II",
     " S ",
     " S "
   ],
@@ -14,6 +14,7 @@
     }
   },
   "result": {
-    "item": "indestructibletools:indestructible_pickaxe"
+    "id": "indestructibletools:indestructible_hoe",
+    "count": 1
   }
 }

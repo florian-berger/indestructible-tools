@@ -12,6 +12,7 @@
     }
   ],
   "result": {
-    "item": "indestructibletools:indestructible_ingot"
+    "id": "indestructibletools:indestructible_ingot",
+    "count": 2
   }
 }

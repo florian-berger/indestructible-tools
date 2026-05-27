@@ -1,8 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " II",
-    " SI",
+    " I ",
+    " S ",
     " S "
   ],
   "key": {
@@ -14,6 +14,7 @@
     }
   },
   "result": {
-    "item": "indestructibletools:indestructible_axe"
+    "id": "indestructibletools:indestructible_shovel",
+    "count": 1
   }
 }
