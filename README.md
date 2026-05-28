@@ -11,8 +11,11 @@ The 'Mending' enchantment isn't enough for me. So I created a mod that adds such
 
 
 ## Recipes
-To craft the ingot, use the following shapeless recipe:\
+To craft two ingots, use the following shapeless recipe:\
 ![Recipe_Ingot](/curseforge/images/Recipe_Ingot.png?raw=true)
+
+> [!NOTE]
+> Since version 2026.1.0 (or Minecraft 1.21.1), the recipe produces two ingots. Earlier, only one ingot was crafted with the same recipe.
 
 With these ingots, you are able to craft the known tools by using the known patterns:\
 ![Recipes_Gif](/curseforge/images/tools-recipes.gif?raw=true)
