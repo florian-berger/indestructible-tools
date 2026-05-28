@@ -1,78 +1,67 @@
 package biz.berger_media.indestructibletools.item;
 
-import biz.berger_media.indestructibletools.helpers.EnchantmentHelper;
 import biz.berger_media.indestructibletools.helpers.ItemHelper;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.item.DiggerItem;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.PickaxeItem;
-import net.minecraft.world.item.Tiers;
-import net.minecraft.world.item.enchantment.Enchantment;
+import net.minecraft.world.item.component.Tool;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.level.Level;
+import net.minecraft.core.BlockPos;
+import org.jetbrains.annotations.NotNull;
+
+import java.util.List;
+
+import static biz.berger_media.indestructibletools.item.IndestructibleItems.INDESTRUCTIBLE_TIER;
 
 /**
  * Class that represents the Multi-Tool (can be used as different tool)
  */
-public class ItemIndestructibleMultiTool extends PickaxeItem {
+public class ItemIndestructibleMultiTool extends Item {
     public ItemIndestructibleMultiTool() {
-        super(Tiers.NETHERITE, 4, -1.5F, ItemHelper.getProperties());
+        super(
+                ItemHelper.getProperties(
+                        DiggerItem.createAttributes(INDESTRUCTIBLE_TIER, 4.0F, -2.0F)
+                ).component(DataComponents.TOOL, createMultiToolComponent())
+        );
     }
 
     @Override
-    public boolean isFireResistant() {
+    public int getEnchantmentValue() {
+        return INDESTRUCTIBLE_TIER.getEnchantmentValue();
+    }
+
+    @Override
+    public boolean isEnchantable(@NotNull ItemStack stack) {
         return true;
     }
 
+    // Override this so the game client plays the correct "swing" animations
+    // and treats it like a harvesting tool in the player's hand.
     @Override
-    public boolean isDamageable(ItemStack stack) {
-        return false;
+    public boolean canAttackBlock(@NotNull BlockState state, @NotNull Level level, @NotNull BlockPos pos, Player player) {
+        return !player.isCreative();
     }
 
-    @Override
-    public float getDestroySpeed(ItemStack stack, BlockState state) {
-        if (state.is(BlockTags.MINEABLE_WITH_AXE)) {
-            return this.speed;
-        }
+    /**
+     * Builds a Tool component combining Pickaxe, Axe, Shovel, and Hoe rules.
+     */
+    private static Tool createMultiToolComponent() {
+        float speed = IndestructibleItems.INDESTRUCTIBLE_TIER.getSpeed();
 
-        if (state.is(BlockTags.MINEABLE_WITH_SHOVEL)) {
-            return this.speed;
-        }
-
-        return super.getDestroySpeed(stack, state);
-    }
-
-    @Override
-    public boolean isCorrectToolForDrops(ItemStack stack, BlockState state) {
-        if (state.is(BlockTags.MINEABLE_WITH_AXE)) {
-            return true;
-        }
-
-        if (state.is(BlockTags.MINEABLE_WITH_SHOVEL)) {
-            return true;
-        }
-
-        return super.isCorrectToolForDrops(stack, state);
-    }
-
-    @Override
-    public boolean isEnchantable(ItemStack stack) {
-        return !stack.isEnchanted();
-    }
-
-    @Override
-    public boolean canApplyAtEnchantingTable(ItemStack stack, Enchantment enchantment) {
-        if (EnchantmentHelper.isInvalidEnchantment(enchantment)) {
-            return false;
-        }
-
-        return super.canApplyAtEnchantingTable(stack, enchantment);
-    }
-
-    @Override
-    public boolean isBookEnchantable(ItemStack stack, ItemStack book) {
-        if (EnchantmentHelper.isBookEnchantedWithInvalidSpell(book)) {
-            return false;
-        }
-
-        return super.isBookEnchantable(stack, book);
+        return new Tool(
+                List.of(
+                        // Make it an effective tool and set mining speed for all 4 types
+                        Tool.Rule.minesAndDrops(BlockTags.MINEABLE_WITH_PICKAXE, speed),
+                        Tool.Rule.minesAndDrops(BlockTags.MINEABLE_WITH_AXE, speed),
+                        Tool.Rule.minesAndDrops(BlockTags.MINEABLE_WITH_SHOVEL, speed),
+                        Tool.Rule.minesAndDrops(BlockTags.MINEABLE_WITH_HOE, speed)
+                ),
+                5.0F,
+                1
+        );
     }
 }

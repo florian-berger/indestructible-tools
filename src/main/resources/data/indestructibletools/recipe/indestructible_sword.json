@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     " I ",
-    " S ",
+    " I ",
     " S "
   ],
   "key": {
@@ -14,6 +14,7 @@
     }
   },
   "result": {
-    "item": "indestructibletools:indestructible_shovel"
+    "id": "indestructibletools:indestructible_sword",
+    "count": 1
   }
 }

@@ -23,6 +23,7 @@
     }
   },
   "result": {
-    "item": "indestructibletools:indestructible_multitool"
+    "id": "indestructibletools:indestructible_multitool",
+    "count": 1
   }
 }

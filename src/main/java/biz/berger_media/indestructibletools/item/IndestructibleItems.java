@@ -1,33 +1,44 @@
 package biz.berger_media.indestructibletools.item;
 
-import biz.berger_media.indestructibletools.IndestructibleTools;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.*;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.RegistryObject;
+import net.neoforged.neoforge.common.SimpleTier;
+import net.neoforged.neoforge.registries.DeferredItem;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.minecraft.world.item.crafting.Ingredient;
+
+import static biz.berger_media.indestructibletools.IndestructibleTools.MOD_ID;
 
 public class IndestructibleItems {
-    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS,
-            IndestructibleTools.MOD_ID);
+    public static final Tier INDESTRUCTIBLE_TIER = new SimpleTier(
+            BlockTags.INCORRECT_FOR_NETHERITE_TOOL,
+            3046,
+            13,
+            5,
+            44, // Double of gold
+            () -> Ingredient.EMPTY
+    );
 
-    public static final RegistryObject<Item> INDESTRUCTIBLE_INGOT =
-            ITEMS.register("indestructible_ingot", ItemIndestructibleIngot::new);
+    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MOD_ID);
 
-    public static final RegistryObject<PickaxeItem> INDESTRUCTIBLE_PICKAXE =
-            ITEMS.register("indestructible_pickaxe", ItemIndestructiblePickaxe::new);
+    public static final DeferredItem<Item> INDESTRUCTIBLE_INGOT =
+            ITEMS.register("indestructible_ingot", resLoc -> new ItemIndestructibleIngot());
 
-    public static final RegistryObject<AxeItem> INDESTRUCTIBLE_AXE =
-            ITEMS.register("indestructible_axe", ItemIndestructibleAxe::new);
+    public static final DeferredItem<Item> INDESTRUCTIBLE_PICKAXE =
+            ITEMS.register("indestructible_pickaxe", resLoc -> new ItemIndestructiblePickaxe());
 
-    public static final RegistryObject<ShovelItem> INDESTRUCTIBLE_SHOVEL =
-            ITEMS.register("indestructible_shovel", ItemIndestructibleShovel::new);
+    public static final DeferredItem<Item> INDESTRUCTIBLE_AXE =
+            ITEMS.register("indestructible_axe", resLoc -> new ItemIndestructibleAxe());
 
-    public static final RegistryObject<SwordItem> INDESTRUCTIBLE_SWORD =
-            ITEMS.register("indestructible_sword", ItemIndestructibleSword::new);
+    public static final DeferredItem<Item> INDESTRUCTIBLE_SHOVEL =
+            ITEMS.register("indestructible_shovel", resLoc -> new ItemIndestructibleShovel());
 
-    public static final RegistryObject<HoeItem> INDESTRUCTIBLE_HOE =
-            ITEMS.register("indestructible_hoe", ItemIndestructibleHoe::new);
+    public static final DeferredItem<Item> INDESTRUCTIBLE_SWORD =
+            ITEMS.register("indestructible_sword", resLoc -> new ItemIndestructibleSword());
 
-    public static final RegistryObject<Item> INDESTRUCTIBLE_MULTITOOL =
-            ITEMS.register("indestructible_multitool", ItemIndestructibleMultiTool::new);
+    public static final DeferredItem<Item> INDESTRUCTIBLE_HOE =
+            ITEMS.register("indestructible_hoe", resLoc -> new ItemIndestructibleHoe());
+
+    public static final DeferredItem<Item> INDESTRUCTIBLE_MULTITOOL =
+            ITEMS.register("indestructible_multitool", resLoc -> new ItemIndestructibleMultiTool());
 }
