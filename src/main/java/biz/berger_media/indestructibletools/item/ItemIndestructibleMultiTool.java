@@ -24,7 +24,7 @@ public class ItemIndestructibleMultiTool extends Item {
     public ItemIndestructibleMultiTool() {
         super(
                 ItemHelper.getProperties(
-                        DiggerItem.createAttributes(INDESTRUCTIBLE_TIER, 3.0F, -1.8F)
+                        DiggerItem.createAttributes(INDESTRUCTIBLE_TIER, 4.0F, -2.0F)
                 ).component(DataComponents.TOOL, createMultiToolComponent())
         );
     }

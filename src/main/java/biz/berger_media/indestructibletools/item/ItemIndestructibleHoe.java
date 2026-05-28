@@ -16,7 +16,7 @@ public class ItemIndestructibleHoe extends HoeItem {
         super(
                 INDESTRUCTIBLE_TIER,
                 ItemHelper.getProperties(
-                        HoeItem.createAttributes(INDESTRUCTIBLE_TIER, 2.0F, -2.4F)
+                        HoeItem.createAttributes(INDESTRUCTIBLE_TIER, -5.0F, 1.0F)
                 )
         );
     }

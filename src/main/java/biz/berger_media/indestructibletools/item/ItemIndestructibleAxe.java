@@ -16,7 +16,7 @@ public class ItemIndestructibleAxe extends AxeItem {
         super(
                 INDESTRUCTIBLE_TIER,
                 ItemHelper.getProperties(
-                        AxeItem.createAttributes(INDESTRUCTIBLE_TIER, 4.0F, -2.8F)
+                        AxeItem.createAttributes(INDESTRUCTIBLE_TIER, 5.0F, -3.0F)
                 )
         );
     }
