@@ -39,6 +39,15 @@ public class IndestructibleItemsTagsProvider extends ItemTagsProvider {
                 IndestructibleItems.INDESTRUCTIBLE_AXE.get()
         };
 
+        Item[] allItems = {
+                IndestructibleItems.INDESTRUCTIBLE_AXE.get(),
+                IndestructibleItems.INDESTRUCTIBLE_HOE.get(),
+                IndestructibleItems.INDESTRUCTIBLE_MULTITOOL.get(),
+                IndestructibleItems.INDESTRUCTIBLE_PICKAXE.get(),
+                IndestructibleItems.INDESTRUCTIBLE_SHOVEL.get(),
+                IndestructibleItems.INDESTRUCTIBLE_SWORD.get()
+        };
+
         for (Item mining : miningItems) {
             this.tag(ItemTags.MINING_ENCHANTABLE).add(mining);
             this.tag(ItemTags.MINING_LOOT_ENCHANTABLE).add(mining);
@@ -50,5 +59,22 @@ public class IndestructibleItemsTagsProvider extends ItemTagsProvider {
         }
 
         this.tag(ItemTags.SWORD_ENCHANTABLE).add(IndestructibleItems.INDESTRUCTIBLE_SWORD.get());
+
+        this.tag(ItemTags.AXES).add(IndestructibleItems.INDESTRUCTIBLE_AXE.get());
+        this.tag(ItemTags.AXES).add(IndestructibleItems.INDESTRUCTIBLE_MULTITOOL.get());
+
+        this.tag(ItemTags.PICKAXES).add(IndestructibleItems.INDESTRUCTIBLE_PICKAXE.get());
+        this.tag(ItemTags.PICKAXES).add(IndestructibleItems.INDESTRUCTIBLE_MULTITOOL.get());
+
+        this.tag(ItemTags.SHOVELS).add(IndestructibleItems.INDESTRUCTIBLE_SHOVEL.get());
+        this.tag(ItemTags.SHOVELS).add(IndestructibleItems.INDESTRUCTIBLE_MULTITOOL.get());
+
+        this.tag(ItemTags.SWORDS).add(IndestructibleItems.INDESTRUCTIBLE_SWORD.get());
+
+        this.tag(ItemTags.HOES).add(IndestructibleItems.INDESTRUCTIBLE_HOE.get());
+
+        for (Item item : allItems) {
+            this.tag(ItemTags.DURABILITY_ENCHANTABLE).remove(item);
+        }
     }
 }

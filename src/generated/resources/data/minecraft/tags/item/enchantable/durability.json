@@ -1,0 +1,11 @@
+{
+  "remove": [
+    "indestructibletools:indestructible_axe",
+    "indestructibletools:indestructible_hoe",
+    "indestructibletools:indestructible_multitool",
+    "indestructibletools:indestructible_pickaxe",
+    "indestructibletools:indestructible_shovel",
+    "indestructibletools:indestructible_sword"
+  ],
+  "values": []
+}
